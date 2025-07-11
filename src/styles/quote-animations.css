@@ -1,0 +1,37 @@
+.quote-fade-enter {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+.quote-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 400ms cubic-bezier(.4,2,.6,1), transform 400ms cubic-bezier(.4,2,.6,1);
+}
+.quote-fade-exit {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.quote-fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.98);
+  transition: opacity 400ms cubic-bezier(.4,2,.6,1), transform 400ms cubic-bezier(.4,2,.6,1);
+}
+
+.quote-loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(99,102,241,0.15);
+  border-top: 4px solid var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

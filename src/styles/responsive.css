@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .quote-display {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .quote-display {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .quote-text {
+    font-size: 1.2rem;
+  }
+  .theme-toggle {
+    text-align: center;
+  }
+} 

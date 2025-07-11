@@ -1,0 +1,44 @@
+:root {
+  --background: #f1f3f6;
+  --glass-bg: rgba(255,255,255,0.1);
+  --text-primary: #1e1e1e;
+  --text-secondary: #63677a;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --border-glow: 0 0 8px 2px rgba(255,255,255,0.18), 0 0 0 1.5px rgba(255,255,255,0.12) inset;
+}
+
+[data-theme='dark'] {
+  --background: #0f111a;
+  --glass-bg: rgba(24, 26, 34, 0.7);
+  --text-primary: #f0f0f0;
+  --text-secondary: #b3b8c5;
+  --accent: #a5b4fc;
+  --accent-hover: #6366f1;
+  --border-glow: 0 0 12px 2px #6366f144, 0 0 0 1.5px #23272f inset;
+}
+
+/* Gradient ring for dark mode */
+[data-theme='dark'] .quote-display::before {
+  background: linear-gradient(120deg, #6366f1 0%, #818cf8 100%);
+  opacity: 0.18;
+}
+[data-theme='dark'] .quote-display:hover::before {
+  opacity: 0.28;
+}
+
+[data-theme='ocean'] {
+  --background: #e0f7fa;
+  --text: #006064;
+  --card-bg: #b2ebf2;
+  --muted: #00838f;
+  --accent: #00bcd4;
+}
+
+[data-theme='sunset'] {
+  --background: #fff3e0;
+  --text: #bf360c;
+  --card-bg: #ffe0b2;
+  --muted: #ff6f00;
+  --accent: #ff9800;
+} 
